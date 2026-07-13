@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.cta-section {
+  width: min(100%, 700px);
+  padding: 65px;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 12px 12px 0 #2563eb;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.description {
+  max-width: 500px;
+  color: #4b4b4b;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 34px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 24px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button-arrow {
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.hint {
+  margin-top: 20px;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 55%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.22);
+  transform: skewX(-20deg);
+  transition: left 0.55s ease;
+}
+
+.button-text,
+.button-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.button-arrow {
+  transition: transform 0.25s ease;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-5px);
+}
+
+.cta-button:hover::before {
+  left: 140%;
+}
+
+.cta-button:hover .button-arrow {
+  transform: translateX(8px);
+}
+
+.cta-button:active {
+  transform: translateY(-1px) scale(0.98);
+}

@@ -1,0 +1,355 @@
+/* Base reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f5ef;
+  color: #111111;
+}
+
+/*Navbar*/
+.navbar {
+  width: 100%;
+  min-height: 75px;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #111111;
+  background-color: #f7f5ef;
+}
+
+.logo {
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-button {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #111111;
+  transition: 0.25s ease;
+}
+
+.nav-button:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Hero section*/
+.hero {
+  min-height: calc(100vh - 76px);
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  margin-bottom: 28px;
+}
+
+.hero-description {
+  max-width: 540px;
+  color: #4b4b4b;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.primary-button,
+.secondary-button {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 15px 22px;
+  border: 2px solid #2563eb;
+  transition: 0.25s ease;
+}
+
+.primary-button:hover {
+  background-color: #111111;
+  border-color: #111111;
+  transform: translateY(-3px);
+}
+
+.secondary-button {
+  color: #111111;
+  border-bottom: 2px solid #111111;
+  padding-bottom: 4px;
+}
+
+.secondary-button:hover {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+/*Hero visual / learning card */
+.hero-visual {
+  width: min(100%, 440px);
+  background-color: #111111;
+  color: #ffffff;
+  padding: 28px;
+  border: 3px solid #111111;
+  box-shadow: 10px 10px 0 #2563eb;
+}
+
+.visual-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.visual-top p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.visual-top span {
+  color: #93c5fd;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.progress-card {
+  margin: 28px 0;
+  padding: 24px;
+  background-color: #f7f5ef;
+  color: #111111;
+  border: 2px solid #ffffff;
+}
+
+.small-label {
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.progress-card h2 {
+  font-size: 1.65rem;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #d4d4d4;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background-color: #2563eb;
+}
+
+.progress-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.mini-cards {
+  display: flex;
+  gap: 12px;
+}
+
+.mini-card {
+  flex: 1;
+  padding: 16px 10px;
+  border: 1px solid #555555;
+  text-align: center;
+}
+
+.mini-card span {
+  display: block;
+  color: #93c5fd;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.mini-card p {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.active-card {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.active-card span {
+  color: #ffffff;
+}
+
+.mini-card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-4px);
+  border-color: #93c5fd;
+}
+
+/* Tablet responsiveness*/
+@media (max-width: 900px) {
+  .navbar {
+    padding: 18px 6%;
+  }
+
+  .hero {
+    padding: 70px 6%;
+    gap: 45px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .hero-visual {
+    max-width: 380px;
+  }
+}
+
+/* Mobile responsiveness*/
+@media (max-width: 700px) {
+  .navbar {
+    min-height: auto;
+    padding: 18px 6%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .nav-button {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 60px 6%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.2rem, 15vw, 4.6rem);
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+    box-shadow: 7px 7px 0 #2563eb;
+  }
+
+  .progress-card {
+    padding: 20px;
+  }
+
+  .progress-card h2 {
+    font-size: 1.35rem;
+  }
+
+  .mini-cards {
+    gap: 8px;
+  }
+
+  .mini-card {
+    padding: 14px 6px;
+  }
+
+  .mini-card p {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A responsive accessible component library built with HTML, CSS, and JavaScript, featuring reusable UI components, design tokens, and light and dark themes."
+    />
+    <title>Accessible Component Library | NexLevr Proof of Work</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="#" class="brand">nexlevr<span>.</span></a>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+      >
+        Toggle theme
+      </button>
+    </header>
+
+    <main class="page-container">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">COMPONENT LIBRARY</p>
+        <h1 id="page-title">Accessible UI, built to be reused.</h1>
+        <p>
+          A small NexLevr-inspired component library using design tokens,
+          reusable styles, and keyboard-friendly interactions.
+        </p>
+      </section>
+
+      <section class="component-section" aria-labelledby="buttons-title">
+        <h2 id="buttons-title">Buttons</h2>
+
+        <div class="component-row">
+          <button class="button button-primary" type="button">
+            Start learning
+          </button>
+          <button class="button button-secondary" type="button">
+            View roadmap
+          </button>
+          <button class="button button-outline" type="button">
+            Save for later
+          </button>
+        </div>
+      </section>
+
+      <section class="component-section" aria-labelledby="form-title">
+        <h2 id="form-title">Form field</h2>
+
+        <form class="form-card">
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+
+          <p class="helper-text">
+            We will only use this to send learning updates.
+          </p>
+
+          <button class="button button-primary" type="submit">
+            Join the waitlist
+          </button>
+        </form>
+      </section>
+
+      <section class="component-section" aria-labelledby="cards-title">
+        <h2 id="cards-title">Cards</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-number">01</p>
+            <h3>Learn</h3>
+            <p>Understand the core concepts through focused lessons.</p>
+            <a href="#learn">Explore learning</a>
+          </article>
+
+          <article class="card card-featured">
+            <p class="card-number">02</p>
+            <h3>Build</h3>
+            <p>Turn concepts into visible proof through practical projects.</p>
+            <a href="#build">Start building</a>
+          </article>
+
+          <article class="card">
+            <p class="card-number">03</p>
+            <h3>Share</h3>
+            <p>Show your work and create a portfolio you can be proud of.</p>
+            <a href="#share">Share your work</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="component-section" aria-labelledby="alert-title">
+        <h2 id="alert-title">Status message</h2>
+
+        <div class="alert" role="status" tabindex="-1">
+          <strong>Progress saved.</strong>
+          Your component-library demo is ready to publish.
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

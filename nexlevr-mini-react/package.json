@@ -1,0 +1,11 @@
+{
+  "name": "nexlevr-mini-react",
+  "version": "1.0.0",
+  "description": "Custom UI Framework and Virtual DOM Renderer from scratch.",
+  "scripts": {
+    "dev": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
