@@ -1,6 +1,6 @@
 ## Level 2
 
-# NexLevr Accessible Component Library
+# Task 1 -> NexLevr Accessible Component Library
 
 A small, responsive, and accessible UI component library built with HTML, CSS, and JavaScript as part of the NexLevr Frontend Developer proof-of-work task.
 
